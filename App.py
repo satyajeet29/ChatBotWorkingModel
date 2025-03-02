@@ -21,4 +21,4 @@ DEBUG_MODE = False
 llm = azureChatOpenAI()
 
 if __name__ == "__main__":
-    chatbot( supabase,  llm=llm, schemaContext=SCHEMA_CONTEXT, sqlPromptTemplate=SQL_PROMPT_TEMPLATE,  DEBUG_MODE = True)
+    chatbot( supabase,  llm=llm, schemaContext=SCHEMA_CONTEXT, sqlPromptTemplate=SQL_PROMPT_TEMPLATE, formatType="json", DEBUG_MODE = False)
