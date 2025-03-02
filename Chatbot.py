@@ -2,7 +2,7 @@ from ChatBotHelper.executeSQLQuery import execute_sql_query
 from ChatBotHelper.generateSQLQuery import generate_sql_query
 from ChatBotHelper.QueryClassifier import classify_query
 from ChatBotHelper.GeneralResponse import genericResponse
-def chatbot(supabase, llm, schemaContext, sqlPromptTemplate, formatType = "markdown", DEBUG_MODE = False):
+def chatbot(supabase, memory, llm, schemaContext, sqlPromptTemplate, formatType = "markdown", DEBUG_MODE = False):
     """Main chatbot loop"""
     print("Supabase Chatbot (type 'exit' to stop)")
 
@@ -17,7 +17,7 @@ def chatbot(supabase, llm, schemaContext, sqlPromptTemplate, formatType = "markd
             result = execute_sql_query(sql_query, llm, supabase, formatType)
             print(f"\n{result}\n")
         elif queryType == "general_response":
-            result = genericResponse(user_input, llm)
+            result = genericResponse(user_input, llm, memory)
             print(f"\n{result}\n")
 
 
