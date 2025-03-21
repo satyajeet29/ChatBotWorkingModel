@@ -19,7 +19,7 @@ def execute_sql_query(sql_query, llm,supabase, formatType):
             markdown_table = llm.invoke(format_prompt)
             return markdown_table.content
         elif formatType == "json":
-            return json.dumps(result_data)
+            return json.dumps(result_data, indent=2)
 
     except Exception as e:
         return f"Error executing query: {e}"

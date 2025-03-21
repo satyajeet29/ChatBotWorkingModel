@@ -13,9 +13,14 @@ def chatbot(supabase, memory, llm, schemaContext, sqlPromptTemplate, formatType 
             break
         queryType = classify_query(user_input, llm)
         if queryType == "sql_generation":
-            sql_query = generate_sql_query(user_input, llm, schemaContext, sqlPromptTemplate)
+            sql_query = generate_sql_query(user_input, llm, schemaContext, sqlPromptTemplate, memory)
             result = execute_sql_query(sql_query, llm, supabase, formatType)
             print(f"\n{result}\n")
+
+            # Save last query & result
+            #last_sql_query = sql_query  # Track last executed SQL query
+            memory.save_context({"input": f"SQL: {sql_query}"}, {"output": result})
+
         elif queryType == "general_response":
             result = genericResponse(user_input, llm, memory)
             print(f"\n{result}\n")

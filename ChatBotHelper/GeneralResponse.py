@@ -1,7 +1,8 @@
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
-def genericResponse(user_query, llm, memory):
+def genericResponse(state, llm, memory):
+    user_query = state["user_input"]
     """Use LLM to generate a generic response for user queries that don't require SQL."""
     # Define prompt template
     prompt_template = PromptTemplate(
@@ -25,4 +26,12 @@ def genericResponse(user_query, llm, memory):
     # Save conversation to memory
     memory.save_context({"input": user_query}, {"output": response})
 
-    return response
+    #return response
+    # Ensure the response is properly stored in 'messages'
+    messages = state.get("messages", [])  # Retrieve existing messages or initialize
+    messages.append({"role": "assistant", "content": response})  # Append latest response
+
+    return {
+            "user_input": user_query,
+            "messages": messages,  # Ensure messages is updated
+        }
