@@ -27,6 +27,12 @@
 </details>
 
 ### 3.0: Description of the architecture
+<details>
+   <summary>Description: (Click to expand)</summary>
+   <pre>
+      Based on the number of business domains involved along with a requirement to have contextual communication we thought it would be better to adopt a Supervisor based architecture further followed by a sub-supervisor to direct domain specific queries to respective domains to generate response for that specific domain, we did use a memory variable to maintain the state and history of queries, using which further context around ongoing query can be maintained to help facilitate a more meaningful conversation as a green building chat bot 
+   </pre>
+</details>
 
 ### 4.0: Output values
 
