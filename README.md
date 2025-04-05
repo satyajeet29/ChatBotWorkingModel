@@ -2,8 +2,8 @@
 ### 1.0 Steps to make it work on your system:
 1. Please download the given folder
 2. Add a .env file with following variables to project folder listed below in section 2.0 
-3. Open a terminal and navigate to the project folder
-
+3. Open a terminal and navigate to the project folder and execute 
+<pre> ```bash python AppLangGraphTooled.py  ``` </pre>
 ### 2.0 .env variable details:
 <details>
   <summary style="color: green; font-weight: bold;">🔐 Environment Variables (Click to expand)</summary>
