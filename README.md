@@ -30,14 +30,14 @@
    Based on the number of business domains involved along with a requirement to have contextual communication we have adopted a Supervisor based architecture further followed by a sub-supervisor to direct domain specific queries to respective domains to generate response for that specific domain, we did use a memory variable to maintain the state and history of queries, using which further context around ongoing query can be maintained to help facilitate a more meaningful conversation as a green building chat bot. 
 3.1 List of components:
 - Supervisor1: Determines if the user query is a domain specific query that needs to be directed towards the Generic LLM if the given query is generic in nature and isn’t pertaining to the five domains listed under Supervisor 2  
--- Generic LLM: It focuses on answering generic questions as a greenbuilding chatbot 
--- Supervisor 2: Based on user queries it determines which domain it would be further directed to following SQL based agents: 
---- User Property: Focuses on determining which properties a user has with read/write access 
---- Energy Consumption: Assist in determination of energy consumption for a given property a user has access to, followed by ability to identify high energy consuming system and computation of average energy consumption 
---- Anomaly: Utilize available anomaly tables to determine properties needing immediate attention 
---- Document Data Storage: Locate documents to a given property along with obtaining real estate information around it 
---- Benchmarking Energy: Compute energy benchmarks across properties based on energy followed by computation of energy star score 
---- Weather Data: Helps determine weather related values associated with a given property 
+   - Generic LLM: It focuses on answering generic questions as a greenbuilding chatbot 
+   - Supervisor 2: Based on user queries it determines which domain it would be further directed to following SQL based agents: 
+      - User Property: Focuses on determining which properties a user has with read/write access 
+      - Energy Consumption: Assist in determination of energy consumption for a given property a user has access to, followed by ability to identify high energy consuming system and computation of average energy consumption 
+      - Anomaly: Utilize available anomaly tables to determine properties needing immediate attention 
+      - Document Data Storage: Locate documents to a given property along with obtaining real estate information around it 
+      - Benchmarking Energy: Compute energy benchmarks across properties based on energy followed by computation of energy star score 
+      - Weather Data: Helps determine weather related values associated with a given property 
 - Bot response: Acts as the outlet for an information generated from the workflow above 
 
 ### 4.0: Output values
