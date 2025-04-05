@@ -5,11 +5,9 @@
    <pre>
     <span>1. Please download the given folder</span>
     <span>2. Add a .env file with following variables to project folder listed below in section 2.0</span> 
-    <span >3. Open a terminal and navigate to the project folder and execute </span>
+    <span >3. Open a terminal and navigate to the project folder and execute: python AppLangGraphTooled.py </span>
    </pre>
 </details>
-```bash
-python AppLangGraphTooled.py
 
 ### 2.0: .env variable details:
 <details>
