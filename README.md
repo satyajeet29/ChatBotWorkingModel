@@ -28,7 +28,7 @@
 
 ### 3.0: Description of the architecture
    Based on the number of business domains involved along with a requirement to have contextual communication we have adopted a Supervisor based architecture further followed by a sub-supervisor to direct domain specific queries to respective domains to generate response for that specific domain, we did use a memory variable to maintain the state and history of queries, using which further context around ongoing query can be maintained to help facilitate a more meaningful conversation as a green building chat bot. 
-3.1 List of components:
+#### 3.1 List of components:
 - Supervisor1: Determines if the user query is a domain specific query that needs to be directed towards the Generic LLM if the given query is generic in nature and isn’t pertaining to the five domains listed under Supervisor 2  
    - Generic LLM: It focuses on answering generic questions as a greenbuilding chatbot 
    - Supervisor 2: Based on user queries it determines which domain it would be further directed to following SQL based agents: 
