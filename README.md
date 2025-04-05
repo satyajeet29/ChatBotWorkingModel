@@ -39,6 +39,8 @@
       - Benchmarking Energy: Compute energy benchmarks across properties based on energy followed by computation of energy star score 
       - Weather Data: Helps determine weather related values associated with a given property 
 - Bot response: Acts as the outlet for an information generated from the workflow above 
+#### 3.2 How is the domain being infered
+The prior list of queries provided to us were used for creating a text vector mapping to let the Supervisor 2 infer the domain:
 
 ### 4.0: Output values
 
