@@ -1,7 +1,7 @@
 # 🔴 Note: This item is still in progress and as of now it has been able to direct the query to it's respective domain 
 ### Steps to make it work on your system:
 1. Please download the given folder
-2. Add a .env file with following variables:<Variable details>
+2. Add a .env file with following variables:<details>
     * LANGSMITH_TRACING=true
     * LANGSMITH_API_KEY=
     * AZURE_OPENAI_API_KEY=
