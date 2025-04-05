@@ -41,6 +41,23 @@
 - Bot response: Acts as the outlet for an information generated from the workflow above 
 #### 3.2 How is the domain being infered
 The prior list of queries provided to us were used for creating a text vector mapping to let the Supervisor 2 infer the domain:
+Examples:
+                        - "What properties do I have access to?" → 'User and Property Access'
+                        - "Can I make changes to Property X?" → 'User and Property Access'
+                        - "Why can’t I see Property Y?" → 'User and Property Access'
+                        - "What is the energy consumption for Property X this month?" → 'Energy Consumption and Utility Data'
+                        - "Which system of property Y is taking more energy?" → 'Energy Consumption and Utility Data'
+                        - "How was my energy consumption for Month A this year compared to Month A last year?" → 'Energy Consumption and Utility Data'
+                        - "Which facade of Property X needs immediate attention?" → 'Anomaly Detection'
+                        - "What are the critical points that I need to address?" → 'Anomaly Detection'
+                        - "What anomalies have been found for property A?" → 'Anomaly Detection'
+                        - "Where can I upload documents for Property X?" → 'Document and Data Storage'
+                        - "How many floors are there in building X?" → 'Document and Data Storage'
+                        - "Where does my building stand in comparison to other buildings of the same size?" → 'Benchmarking and Energy Models'
+                        - "Has my Energy Star score improved over time?" → 'Benchmarking and Energy Models'
+                        - "What is the payback period for [X energy conservation measure] ?" → 'Benchmarking and Energy Models'
+                        - "What is the forecasted weather for Property X?" → 'Weather Data'
+                        - "What was the average monthly weather data for Property Y?" → 'Weather Data'       
 
 ### 4.0: Output values
 
