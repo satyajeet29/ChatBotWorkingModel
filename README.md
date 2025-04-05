@@ -3,7 +3,7 @@
 1. Please download the given folder
 2. Add a .env file with following variables to project folder listed below in section 2.0 
 3. Open a terminal and navigate to the project folder and execute 
-``bash python AppLangGraphTooled.py  ```
+```bash python AppLangGraphTooled.py  ```
 ### 2.0 .env variable details:
 <details>
   <summary style="color: green; font-weight: bold;">🔐 Environment Variables (Click to expand)</summary>
