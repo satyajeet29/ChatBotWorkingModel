@@ -8,6 +8,8 @@
     <span >3. Open a terminal and navigate to the project folder and execute </span>
    </pre>
 </details>
+```bash
+python AppLangGraphTooled.py
 
 ### 2.0: .env variable details:
 <details>
