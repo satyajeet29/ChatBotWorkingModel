@@ -4,6 +4,7 @@
 2. Add a .env file with following variables to project folder listed below in section 2.0 
 3. Open a terminal and navigate to the project folder and execute 
 ```bash python AppLangGraphTooled.py  ```
+
 ### 2.0 .env variable details:
 <details>
   <summary style="color: green; font-weight: bold;">🔐 Environment Variables (Click to expand)</summary>
@@ -20,3 +21,13 @@
   <span style="color: green;">SUPABASE_KEY=</span>
   </pre>
 </details>
+
+### 3.0 Description of the architecture
+
+### 4.0 Output values
+
+### 5.0 Next Steps
+
+### 6.0
+
+
