@@ -4,7 +4,7 @@
 2. Add a .env file with following variables to project folder:
 3. Open a terminal and navigate to the project folder
 
-## env variable details:
+### .env variable details:
 <details>
   <summary style="color: green; font-weight: bold;">🔐 Environment Variables (Click to expand)</summary>
   <pre>
