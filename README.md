@@ -60,7 +60,12 @@ The prior list of queries provided to us were used for creating a text vector ma
    - "What was the average monthly weather data for Property Y?" → 'Weather Data'       
 
 ### 4.0: Output values
-
+-   User and Property Access
+-   Energy Consumption and Utility Data
+-   Anomaly Detection
+-   Document and Data Storage
+-   Benchmarking and Energy Models
+-   Weather Data
 ### 5.0: Next Steps
 
 ### 6.0
