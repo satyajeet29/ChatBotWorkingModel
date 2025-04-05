@@ -68,7 +68,7 @@ As this is a work item in progress, for now it has been able to direct the domai
 -   Benchmarking and Energy Models
 -   Weather Data
 ### 5.0: Next Steps
-
-### 6.0
+Owing to time constraint we haven't been able to fully implement the six domain related agents and these are the remaining steps to make it functional:
+It would be necessary to add Domain related data schema, Agent with prompts fine tuned for specific domain in Domain Tuned folder
 
 
