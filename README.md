@@ -6,14 +6,17 @@
 
 ## env variable details:
 <details>
-    * LANGSMITH_TRACING=true
-    * LANGSMITH_API_KEY=
-    * AZURE_OPENAI_API_KEY=
-    * AZURE_OPENAI_ENDPOINT=https://msa-openai.openai.azure.com/
-    * AZURE_OPENAI_DEPLOYMENT_NAME = gpt-4o
-    * AZURE_OPENAI_API_VERSION= 2023-12-01-preview
-    * subapase_email=
-    * subapase_password = 
-    * SUPABASE_URL=
-    * SUPABASE_KEY=
+  <summary style="color: green; font-weight: bold;">🔐 Environment Variables (Click to expand)</summary>
+  <pre>
+  <span style="color: orange;">LANGSMITH_TRACING=true</span>
+  <span style="color: red;">LANGSMITH_API_KEY=</span>
+  <span style="color: red;">AZURE_OPENAI_API_KEY=</span>
+  <span style="color: blue;">AZURE_OPENAI_ENDPOINT=https://msa-openai.openai.azure.com/</span>
+  <span style="color: purple;">AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o</span>
+  <span style="color: purple;">AZURE_OPENAI_API_VERSION=2023-12-01-preview</span>
+  <span style="color: orange;">subapase_email=</span>
+  <span style="color: orange;">subapase_password=</span>
+  <span style="color: green;">SUPABASE_URL=</span>
+  <span style="color: green;">SUPABASE_KEY=</span>
+  </pre>
 </details>
