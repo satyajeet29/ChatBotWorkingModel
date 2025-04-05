@@ -41,7 +41,7 @@
 - Bot response: Acts as the outlet for an information generated from the workflow above 
 #### 3.2 How is the domain being infered
 The prior list of queries provided to us were used for creating a text vector mapping to let the Supervisor 2 infer the domain:
--Examples:
+- Examples:
    - "What properties do I have access to?" → 'User and Property Access'
    - "Can I make changes to Property X?" → 'User and Property Access'
    - "Why can’t I see Property Y?" → 'User and Property Access'
